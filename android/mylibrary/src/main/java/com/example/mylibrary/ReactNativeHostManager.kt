@@ -11,6 +11,8 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
+import expo.modules.ApplicationLifecycleDispatcher
+import expo.modules.ReactNativeHostWrapper
 
 class ReactNativeHostManager {
     companion object {
@@ -37,21 +39,23 @@ class ReactNativeHostManager {
             // If you opted-in for the New Architecture, we load the native entry point for this app.
             load()
         }
+        ApplicationLifecycleDispatcher.onApplicationCreate(application)
 
         val reactApp = object : ReactApplication {
-            override val reactNativeHost: ReactNativeHost = object : DefaultReactNativeHost(application) {
+            override val reactNativeHost: ReactNativeHost = ReactNativeHostWrapper(application,
+                object : DefaultReactNativeHost(application) {
                     override fun getPackages(): MutableList<ReactPackage> {
                         return PackageList(application).packages
                     }
 
-                    override fun getJSMainModuleName(): String = "index"
+                    override fun getJSMainModuleName(): String = ".expo/.virtual-metro-entry"
                     override fun getBundleAssetName(): String = "index.android.bundle"
 
                     override fun getUseDeveloperSupport() = BuildConfig.DEBUG
 
                     override val isNewArchEnabled: Boolean = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
                     override val isHermesEnabled: Boolean = BuildConfig.IS_HERMES_ENABLED
-                }
+                })
 
             override val reactHost: ReactHost
                 get() = getDefaultReactHost(application, reactNativeHost)

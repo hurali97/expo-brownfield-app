@@ -97,11 +97,7 @@ publishing {
                     val dependenciesNode = (asNode().get("dependencies") as groovy.util.NodeList).first() as groovy.util.Node
                     dependenciesNode.children()
                         .filterIsInstance<groovy.util.Node>()
-                        .filter {
-                            val isExpoDep = (it.get("groupId") as groovy.util.NodeList).text() == "host.exp.exponent"
-
-                            (isExpoDep || (it.get("groupId") as groovy.util.NodeList).text() == rootProject.name)
-                        }
+                        .filter { (it.get("groupId") as groovy.util.NodeList).text() == rootProject.name }
                         .forEach { dependenciesNode.remove(it) }
                 }
             }
@@ -125,18 +121,13 @@ tasks.register("removeDependenciesFromModuleFile") {
         file("$moduleBuildDir/publications/mavenAar/module.json").run {
             val json = inputStream().use { JsonSlurper().parse(it) as Map<String, Any> }
             (json["variants"] as? List<MutableMap<String, Any>>)?.forEach { variant ->
-                (variant["dependencies"] as? MutableList<Map<String, Any>>)?.removeAll {
-                    val module = it["module"]
-                    val moduleGroup = it["group"]
-                    val isExpoDep = moduleGroup == "host.exp.exponent" && module == "expo"
-
-                    (isExpoDep || moduleGroup == rootProject.name)
-                }
+                (variant["dependencies"] as? MutableList<Map<String, Any>>)?.removeAll { it["group"] == rootProject.name }
             }
             writer().use { it.write(JsonOutput.prettyPrint(JsonOutput.toJson(json))) }
         }
     }
 }
+
 tasks.named("generateMetadataFileForMavenAarPublication") {
     finalizedBy("removeDependenciesFromModuleFile")
 }
