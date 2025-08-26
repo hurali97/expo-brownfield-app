@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2B55DCDDA2F9F1D1750A0D59 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD7DD880453EDDE8B415BD /* ExpoModulesProvider.swift */; };
-		3207CFCD2857D06467ECB7B4 /* libPods-expoapptest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6000ABF4D12BB1C7204165DC /* libPods-expoapptest.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		43963D8DC6A14BBC72BE313F /* Pods_expoapptest_RNEXFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E895C715AD56420D50B604 /* Pods_expoapptest_RNEXFramework.framework */; };
+		6127BD182E4D0FD500E14EC3 /* RNEXFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6127BD162E4D0FD500E14EC3 /* RNEXFramework.docc */; };
+		6127BD192E4D0FD500E14EC3 /* RNEXFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6127BD152E4D0FD500E14EC3 /* RNEXFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6127BD1B2E4D0FEA00E14EC3 /* ReactNativeHostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BD1A2E4D0FE400E14EC3 /* ReactNativeHostManager.swift */; };
 		695EB805D34A4E973EB989AB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F2019B2C1190F40B088A4447 /* PrivacyInfo.xcprivacy */; };
+		7AE045FFECB579AC3BB64B0D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11815C321B363BAA4626439 /* ExpoModulesProvider.swift */; };
+		8F16211B232EE3C53917D8E3 /* Pods_expoapptest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5235D8818B71B4B90670D14E /* Pods_expoapptest.framework */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -22,14 +27,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = expoapptest/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = expoapptest/Info.plist; sourceTree = "<group>"; };
 		3FFD7DD880453EDDE8B415BD /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-expoapptest/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		6000ABF4D12BB1C7204165DC /* libPods-expoapptest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expoapptest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5235D8818B71B4B90670D14E /* Pods_expoapptest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expoapptest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E895C715AD56420D50B604 /* Pods_expoapptest_RNEXFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expoapptest_RNEXFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6127BD0B2E4D0FCE00E14EC3 /* RNEXFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNEXFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6127BD152E4D0FD500E14EC3 /* RNEXFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNEXFramework.h; sourceTree = "<group>"; };
+		6127BD162E4D0FD500E14EC3 /* RNEXFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RNEXFramework.docc; sourceTree = "<group>"; };
+		6127BD1A2E4D0FE400E14EC3 /* ReactNativeHostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeHostManager.swift; sourceTree = "<group>"; };
+		731EF8131873305AAB9BDEEE /* Pods-expoapptest-RNEXFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expoapptest-RNEXFramework.release.xcconfig"; path = "Target Support Files/Pods-expoapptest-RNEXFramework/Pods-expoapptest-RNEXFramework.release.xcconfig"; sourceTree = "<group>"; };
+		A11815C321B363BAA4626439 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-expoapptest-RNEXFramework/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		A3A9F869AED2DCE20FF3326A /* Pods-expoapptest-RNEXFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expoapptest-RNEXFramework.debug.xcconfig"; path = "Target Support Files/Pods-expoapptest-RNEXFramework/Pods-expoapptest-RNEXFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = expoapptest/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		C400DC21E3A1B1C2E20176C0 /* Pods-expoapptest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expoapptest.debug.xcconfig"; path = "Target Support Files/Pods-expoapptest/Pods-expoapptest.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = expoapptest/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* expoapptest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "expoapptest-Bridging-Header.h"; path = "expoapptest/expoapptest-Bridging-Header.h"; sourceTree = "<group>"; };
-		F2019B2C1190F40B088A4447 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = expoapptest/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F2019B2C1190F40B088A4447 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = expoapptest/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +50,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3207CFCD2857D06467ECB7B4 /* libPods-expoapptest.a in Frameworks */,
+				8F16211B232EE3C53917D8E3 /* Pods_expoapptest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6127BD082E4D0FCE00E14EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43963D8DC6A14BBC72BE313F /* Pods_expoapptest_RNEXFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6000ABF4D12BB1C7204165DC /* libPods-expoapptest.a */,
+				5235D8818B71B4B90670D14E /* Pods_expoapptest.framework */,
+				59E895C715AD56420D50B604 /* Pods_expoapptest_RNEXFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,8 +93,19 @@
 			isa = PBXGroup;
 			children = (
 				7A16CCB73F1E326A96544D00 /* expoapptest */,
+				83D4BE5238A1C3225214D195 /* RNEXFramework */,
 			);
 			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		6127BD172E4D0FD500E14EC3 /* RNEXFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6127BD1A2E4D0FE400E14EC3 /* ReactNativeHostManager.swift */,
+				6127BD152E4D0FD500E14EC3 /* RNEXFramework.h */,
+				6127BD162E4D0FD500E14EC3 /* RNEXFramework.docc */,
+			);
+			path = RNEXFramework;
 			sourceTree = "<group>";
 		};
 		7A16CCB73F1E326A96544D00 /* expoapptest */ = {
@@ -88,8 +121,9 @@
 			children = (
 				C400DC21E3A1B1C2E20176C0 /* Pods-expoapptest.debug.xcconfig */,
 				00795F0D4DA775CCD08AA57B /* Pods-expoapptest.release.xcconfig */,
+				A3A9F869AED2DCE20FF3326A /* Pods-expoapptest-RNEXFramework.debug.xcconfig */,
+				731EF8131873305AAB9BDEEE /* Pods-expoapptest-RNEXFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +139,7 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* expoapptest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				6127BD172E4D0FD500E14EC3 /* RNEXFramework */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				7F51103EE3185FFFD2667222 /* Pods */,
@@ -119,8 +154,17 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* expoapptest.app */,
+				6127BD0B2E4D0FCE00E14EC3 /* RNEXFramework.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		83D4BE5238A1C3225214D195 /* RNEXFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A11815C321B363BAA4626439 /* ExpoModulesProvider.swift */,
+			);
+			name = RNEXFramework;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -133,6 +177,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6127BD062E4D0FCE00E14EC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6127BD192E4D0FD500E14EC3 /* RNEXFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		13B07F861A680F5B00A75B9A /* expoapptest */ = {
@@ -157,6 +212,29 @@
 			productReference = 13B07F961A680F5B00A75B9A /* expoapptest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6127BD0A2E4D0FCE00E14EC3 /* RNEXFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6127BD142E4D0FCE00E14EC3 /* Build configuration list for PBXNativeTarget "RNEXFramework" */;
+			buildPhases = (
+				89E040CAE2A6AFF44ECD3845 /* [CP] Check Pods Manifest.lock */,
+				6127BD062E4D0FCE00E14EC3 /* Headers */,
+				E0F980A3F5F77F38B7185A6E /* [Expo] Configure project */,
+				6135AE912E51E59A008A2431 /* Patch ExpoModulesProvider */,
+				6127BD072E4D0FCE00E14EC3 /* Sources */,
+				6127BD082E4D0FCE00E14EC3 /* Frameworks */,
+				6127BD092E4D0FCE00E14EC3 /* Resources */,
+				286BF17A353984A54F4DDB13 /* [CP] Copy Pods Resources */,
+				6127BD1C2E4D109F00E14EC3 /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNEXFramework;
+			productName = RNEXFramework;
+			productReference = 6127BD0B2E4D0FCE00E14EC3 /* RNEXFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +245,9 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1250;
+					};
+					6127BD0A2E4D0FCE00E14EC3 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -184,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* expoapptest */,
+				6127BD0A2E4D0FCE00E14EC3 /* RNEXFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +279,13 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				695EB805D34A4E973EB989AB /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6127BD092E4D0FCE00E14EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +329,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		286BF17A353984A54F4DDB13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-expoapptest-RNEXFramework/Pods-expoapptest-RNEXFramework-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoSystemUI/ExpoSystemUI_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoSystemUI_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-expoapptest-RNEXFramework/Pods-expoapptest-RNEXFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FF1B05912EC724624D69E1F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +402,44 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-expoapptest/expo-configure-project.sh\"\n";
 		};
+		6127BD1C2E4D109F00E14EC3 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		6135AE912E51E59A008A2431 /* Patch ExpoModulesProvider */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Patch ExpoModulesProvider";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Path to ExpoModulesProvider.swift generated by CocoaPods\nFILE=\"${SRCROOT}/Pods/Target Support Files/Pods-expoapptest-RNEXFramework/ExpoModulesProvider.swift\"\n\nif [ -f \"$FILE\" ]; then\n  echo \"Patching $FILE to hide Expo from public interface\"\n\n  # 1. Replace imports with internal imports\n  sed -i '' 's/^import EX/internal import EX/' \"$FILE\"\n  \n  sed -i '' 's/^import Ex/internal import Ex/' \"$FILE\"\n\n  # 2. Replace class visibility\n  sed -i '' 's/public class ExpoModulesProvider/internal class ExpoModulesProvider/' \"$FILE\"\nfi\n";
+		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +476,47 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-expoapptest/Pods-expoapptest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		89E040CAE2A6AFF44ECD3845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-expoapptest-RNEXFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F980A3F5F77F38B7185A6E /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-expoapptest-RNEXFramework/expo-configure-project.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -322,6 +526,16 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				2B55DCDDA2F9F1D1750A0D59 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6127BD072E4D0FCE00E14EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6127BD1B2E4D0FEA00E14EC3 /* ReactNativeHostManager.swift in Sources */,
+				6127BD182E4D0FD500E14EC3 /* RNEXFramework.docc in Sources */,
+				7AE045FFECB579AC3BB64B0D /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +608,106 @@
 			};
 			name = Release;
 		};
+		6127BD112E4D0FCE00E14EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A9F869AED2DCE20FF3326A /* Pods-expoapptest-RNEXFramework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hur.RNEXFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6127BD122E4D0FCE00E14EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731EF8131873305AAB9BDEEE /* Pods-expoapptest-RNEXFramework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hur.RNEXFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +755,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -500,6 +825,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -526,6 +862,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6127BD142E4D0FCE00E14EC3 /* Build configuration list for PBXNativeTarget "RNEXFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6127BD112E4D0FCE00E14EC3 /* Debug */,
+				6127BD122E4D0FCE00E14EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

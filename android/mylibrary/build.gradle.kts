@@ -10,6 +10,10 @@ plugins {
 }
 
 reactBrownfield {
+    /**
+     * This will be available from `com.callstack.react.brownfield` version > 3.0.0
+     * It takes care of linking expo dependencies like expo-image with your AAR module.
+     */
     isExpo = true
 }
 
@@ -76,6 +80,18 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 }
 
+/**
+ * This function is used in the places where we:
+ *
+ * Remove the `expo` dependency from the `module.json` and `pom.xml file. Otherwise, the
+ * gradle will try to resolve this and will throw an error, since this dependency won't
+ * be available from a remote repository.
+ *
+ * Your AAR does not need this dependency.
+ */
+fun isExpoDep(group: String, artifactId: String): Boolean {
+    return group == "host.exp.exponent" && artifactId == "expo"
+}
 
 publishing {
     publications {
@@ -97,7 +113,12 @@ publishing {
                     val dependenciesNode = (asNode().get("dependencies") as groovy.util.NodeList).first() as groovy.util.Node
                     dependenciesNode.children()
                         .filterIsInstance<groovy.util.Node>()
-                        .filter { (it.get("groupId") as groovy.util.NodeList).text() == rootProject.name }
+                        .filter {
+                            val artifactId = (it["artifactId"] as groovy.util.NodeList).text()
+                            val group = (it["groupId"] as groovy.util.NodeList).text()
+
+                            (isExpoDep(group, artifactId) || group == rootProject.name)
+                        }
                         .forEach { dependenciesNode.remove(it) }
                 }
             }
@@ -121,7 +142,12 @@ tasks.register("removeDependenciesFromModuleFile") {
         file("$moduleBuildDir/publications/mavenAar/module.json").run {
             val json = inputStream().use { JsonSlurper().parse(it) as Map<String, Any> }
             (json["variants"] as? List<MutableMap<String, Any>>)?.forEach { variant ->
-                (variant["dependencies"] as? MutableList<Map<String, Any>>)?.removeAll { it["group"] == rootProject.name }
+                (variant["dependencies"] as? MutableList<Map<String, Any>>)?.removeAll {
+                    val module = it["module"] as String
+                    val group = it["group"] as String
+
+                    (isExpoDep(group, module) || group == rootProject.name)
+                }
             }
             writer().use { it.write(JsonOutput.prettyPrint(JsonOutput.toJson(json))) }
         }

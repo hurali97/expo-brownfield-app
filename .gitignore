@@ -39,3 +39,7 @@ yarn-error.*
 app-example
 
 **/*.so
+
+**/frameworks/**
+
+**/*.xcframework

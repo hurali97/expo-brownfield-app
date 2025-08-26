@@ -41,6 +41,13 @@ class ReactNativeHostManager {
         }
         ApplicationLifecycleDispatcher.onApplicationCreate(application)
 
+        /**
+         * If your project is using ExpoModules, you can use `index` instead.
+         *
+         * Below module name is when your project is using Expo CLI
+         */
+        val jsMainModuleName = ".expo/.virtual-metro-entry"
+
         val reactApp = object : ReactApplication {
             override val reactNativeHost: ReactNativeHost = ReactNativeHostWrapper(application,
                 object : DefaultReactNativeHost(application) {
@@ -48,7 +55,7 @@ class ReactNativeHostManager {
                         return PackageList(application).packages
                     }
 
-                    override fun getJSMainModuleName(): String = ".expo/.virtual-metro-entry"
+                    override fun getJSMainModuleName(): String = jsMainModuleName
                     override fun getBundleAssetName(): String = "index.android.bundle"
 
                     override fun getUseDeveloperSupport() = BuildConfig.DEBUG
